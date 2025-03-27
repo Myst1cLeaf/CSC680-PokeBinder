@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Pikachu",
+        "type": "Electric",
+        "rarity": "Common",
+        "image_url": "https://example.com/pikachu.png"
+    },
+    {
+        "name": "Charizard",
+        "type": "Fire",
+        "rarity": "Rare",
+        "image_url": "https://example.com/charizard.png"
+    }
+]
