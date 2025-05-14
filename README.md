@@ -12,11 +12,11 @@ This app allows users to manually search for Pokémon cards and retrieve details
 
 Manual Search: Users can enter a Pokémon card name to retrieve details.
 
-Card Details Display: Show card stats, type, rarity, and image.
+Card Details Display: Show card, type, and image.
 
 User Collection Management: Users can save and remove cards from their personal collection.
 
-Local Storage: Use CoreData or Firebase to store user collections.
+Local Storage: Use UserDefaults or CoreData/Firebase depending on time to store user collections.
 
 Clean UI: Simple, user-friendly interface for searching and viewing card details.
 <br/>
@@ -40,11 +40,11 @@ Share Feature: Users can share card details via social media or messaging apps.
 
 Search bar at the top
 
-List of recent searches or popular cards
+List of Cards 
 
 2. Card Details Page
 
-Displays card name, image, type, rarity, and stats
+Displays card name, image, and type
 
 "Add to Collection" button
 
@@ -61,7 +61,7 @@ Sorting and filtering options (if implemented)
 
 Language: Swift (UIKit or SwiftUI)
 
-Data Storage: CoreData or Firebase
+Data Storage: CoreData or Firebase(if time permits)
 
 API (Optional): TCGPlayer API
 
@@ -73,5 +73,7 @@ OCR (Optional): Apple Vision Framework
 Clone the repository.
 
 Install dependencies if needed.
+
+Get own API key from pokemontcg.io
 
 Run the app on Xcode.
