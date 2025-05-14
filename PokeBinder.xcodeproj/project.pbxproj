@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0ED5057B2DC3297000D4129B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0ED5057A2DC3296900D4129B /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0E83099E2D925E0D000D6A7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +31,25 @@
 		0E83098D2D925E0C000D6A7D /* PokeBinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeBinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E83099D2D925E0D000D6A7D /* PokeBinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeBinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8309A72D925E0D000D6A7D /* PokeBinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeBinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED5057A2DC3296900D4129B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0E9189192DB995A900F79EB3 /* Exceptions for "PokeBinder" folder in "PokeBinder" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0E83098C2D925E0C000D6A7D /* PokeBinder */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0E83098F2D925E0C000D6A7D /* PokeBinder */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0E9189192DB995A900F79EB3 /* Exceptions for "PokeBinder" folder in "PokeBinder" target */,
+			);
 			path = PokeBinder;
 			sourceTree = "<group>";
 		};
@@ -75,6 +93,7 @@
 		0E8309842D925E0C000D6A7D = {
 			isa = PBXGroup;
 			children = (
+				0ED5057A2DC3296900D4129B /* .gitignore */,
 				0E83098F2D925E0C000D6A7D /* PokeBinder */,
 				0E8309A02D925E0D000D6A7D /* PokeBinderTests */,
 				0E8309AA2D925E0D000D6A7D /* PokeBinderUITests */,
@@ -212,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED5057B2DC3297000D4129B /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +291,8 @@
 /* Begin XCBuildConfiguration section */
 		0E8309AF2D925E0D000D6A7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 0E83098F2D925E0C000D6A7D /* PokeBinder */;
+			baseConfigurationReferenceRelativePath = Secrets.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -334,6 +356,8 @@
 		};
 		0E8309B02D925E0D000D6A7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 0E83098F2D925E0C000D6A7D /* PokeBinder */;
+			baseConfigurationReferenceRelativePath = Secrets.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -396,8 +420,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PokeBinder/Preview Content\"";
+				DEVELOPMENT_TEAM = B39SYC8Q42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/PokeBinder/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -424,8 +450,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PokeBinder/Preview Content\"";
+				DEVELOPMENT_TEAM = B39SYC8Q42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/PokeBinder/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

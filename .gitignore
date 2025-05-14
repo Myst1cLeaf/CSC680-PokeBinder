@@ -1,0 +1,9 @@
+//
+//  .gitignore
+//  PokeBinder
+//
+//  Created by Luis Carrillo on 4/30/25.
+//
+
+# Secrets
+PokeBinder/Secrets.xcconfig

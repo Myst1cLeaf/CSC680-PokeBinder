@@ -7,11 +7,31 @@
 
 import Foundation
 
-struct PokemonCard: Codable {
+struct PokemonCard: Codable, Identifiable {
+    let id: String
     let name: String
-    let type: String
-    let rarity: String
-    let image_url: String
+    let supertype: String
+    let types: [String]?
+    let rarity: String?
+    let images: CardImages
+
+    struct CardImages: Codable {
+        let small: String
+        let large: String
+    }
+}
+
+struct CardDataManager {
+    static func loadCards() -> [PokemonCard] {
+        guard let url = Bundle.main.url(forResource: "pokemon_cards", withExtension: "json"),
+              let data = try? Data(contentsOf: url),
+              let cards = try? JSONDecoder().decode([PokemonCard].self, from: data) else {
+            print("Failed to load cards from JSON")
+            return []
+        }
+
+        return cards
+    }
 }
 
 func loadCards() -> [PokemonCard] {
