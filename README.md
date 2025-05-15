@@ -74,6 +74,6 @@ Clone the repository.
 
 Install dependencies if needed.
 
-Get own API key from pokemontcg.io
+Get own API key from pokemontcg.io and replace apiKey in CardAPIService.swift as needed.
 
 Run the app on Xcode.
